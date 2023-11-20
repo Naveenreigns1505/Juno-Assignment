@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Juno-Assignment/static/css/main.33763af1.css",
+    "main.js": "/Juno-Assignment/static/js/main.f256670e.js",
+    "static/js/787.1937f22b.chunk.js": "/Juno-Assignment/static/js/787.1937f22b.chunk.js",
+    "index.html": "/Juno-Assignment/index.html",
+    "main.33763af1.css.map": "/Juno-Assignment/static/css/main.33763af1.css.map",
+    "main.f256670e.js.map": "/Juno-Assignment/static/js/main.f256670e.js.map",
+    "787.1937f22b.chunk.js.map": "/Juno-Assignment/static/js/787.1937f22b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.33763af1.css",
+    "static/js/main.f256670e.js"
+  ]
+}
