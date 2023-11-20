@@ -1,0 +1,439 @@
+.container {
+  width: 70%;
+  height: auto;
+  padding-left: 40px;
+  padding-top: 20px;
+}
+
+.page-heading {
+  width: 120px;
+  height: 31px;
+}
+
+.heading {
+  color: var(--content-primary, #050505);
+  font-family: Lettera Text LL;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.tab-switch {
+  display: flex;
+  margin-top: 25px;
+  position: relative;
+}
+.tab {
+  width: 92px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 19px;
+  border-radius: var(--spacing-space-00, 0px);
+  position: relative;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+.tab-heading {
+  width: auto;
+  height: auto;
+  color: var(--content-tertiary, #adadad);
+  background-color: white;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: Lettera Text LL;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.active .tab-heading {
+  color: var(--base-brand, #4643ee);
+}
+
+.underline {
+  width: 100%;
+  height: 2px;
+  border-radius: 100px;
+  background: var(--base-brand, #4643ee);
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+.border-bottom {
+  width: 100%;
+  height: 2px;
+  border-radius: var(--spacing-space-00, 0px);
+  background: var(--background-disabled, #e4e4e4);
+  position: absolute;
+  bottom: 0;
+}
+
+.close-account {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  border-radius: 7px;
+  background: var(--background-default, #f6d8d8);
+}
+.close-account-button {
+  display: inline-flex;
+  height: 40px;
+  padding: 8px var(--spacing-space-200, 16px);
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.close-icon {
+  width: 18px;
+  height: 18px;
+  color: #d13b3b;
+}
+
+.close-text {
+  color: var(--base-error, #d13b3b);
+  font-family: Lettera Text LL;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+.filtering {
+  display: flex;
+  padding-top: 20px;
+  gap: 20px;
+}
+
+.search-bar {
+  margin: 0px 10px 10px 0px;
+  display: flex;
+  flex: 0.6;
+  align-items: center;
+  margin-bottom: 16px;
+  margin-left: -20px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 8px 8px 8px 40px;
+  border: 1px solid #e4e4e4;
+  border-radius: 9px 8px 8px 9px;
+}
+
+.search-icon {
+  position: relative;
+  right: -30px;
+  cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+  color: #adadad;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+}
+:-moz-placeholder {
+  color: #adadad;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  opacity: 1;
+}
+::-moz-placeholder {
+  color: #adadad;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  color: #adadad;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+}
+::-ms-input-placeholder {
+  color: #adadad;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+::placeholder {
+  color: #adadad;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.filter {
+  display: flex;
+  gap: 10px;
+}
+
+.select-container {
+  position: relative; /* Ensure proper positioning of the OrderBy component */
+}
+
+.filter select {
+  color: #777676;
+  display: flex;
+  height: 34px;
+  padding: 8px;
+  align-items: center;
+  gap: 6px;
+  border-radius: 7px;
+  background: #f5f5f5;
+  border: none;
+}
+
+.filter select option {
+  color: #777676;
+  font-family: Lettera Text LL;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+.filter select.decorated option:hover {
+  box-shadow: 0 0 10px 100px rgba(70, 67, 238, 0.1) inset;
+}
+
+@media only screen and (max-width: 768px) {
+  .conatiner {
+    width: 100%;
+    margin-top: 50px;
+    padding-left: 20px;
+  }
+
+  .tab-switch {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .close-account {
+    position: relative;
+    margin-top: 10px;
+  }
+
+  .search-bar {
+    margin-right: 0; /* Remove right margin on mobile screens */
+  }
+
+  .search-bar input {
+    width: 50%;
+    padding: -1px; /* Adjust padding for better input box appearance */
+  }
+
+  .filtering {
+    flex-direction: column; /* Stack filter elements vertically on mobile screens */
+  }
+
+  .filter button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.table-container {
+  margin: 0;
+  padding: 0;
+  border-spacing: 0;
+  border: 1px solid #e4e4e4;
+  border-radius: var(--spacing-space-00, 13px);
+  width: 100%;
+  max-height: calc(100vh - 130px);
+  overflow-y: auto;
+}
+
+.table-container tr td {
+  border-bottom: 1px solid #e4e4e4 !important;
+}
+
+.table-header-row {
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.table-head {
+  width: 100%;
+  height: 30px;
+  font-family: Lettera Text LL;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 18px;
+  margin: 0;
+  padding: var(--spacing-space-150, 12px) 12px;
+  border-bottom: 1px solid #e4e4e4;
+  white-space: nowrap;
+}
+
+.row-head-icon {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.row-head-icon div {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .table-head {
+    font-size: 1em;
+  }
+
+  .user-section {
+    padding: 10px;
+  }
+}
+
+.table-head:first-child {
+  border-top-left-radius: 12px;
+}
+
+.table-head:last-child {
+  border-top-right-radius: 12px;
+}
+
+.user-section {
+  display: flex;
+  height: auto;
+  padding: var(--spacing-space-200, 7px) 8px var(--spacing-space-200, 7px) 12px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  gap: 25px;
+}
+
+.user-name-email {
+  display: flex;
+  padding: var(--spacing-space-00, 0px);
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.user-name {
+  color: var(--content-primary, #050505);
+  text-align: center;
+  font-family: Lettera Text LL;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.user-email {
+  color: var(--content-secondary, #777676);
+  text-align: center;
+  font-family: Lettera Text LL;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.risk-level {
+  display: flex;
+  height: auto;
+  padding: var(--spacing-space-200, 16px) 18px var(--spacing-space-200, 16px)
+    24px;
+  align-items: center;
+  gap: 6px;
+  align-self: stretch;
+  color: #88670f;
+}
+
+.date-added-on {
+  display: flex;
+  height: auto;
+  padding: var(--spacing-space-200, 16px) 18px var(--spacing-space-200, 16px)
+    24px;
+  align-items: center;
+  gap: var(--spacing-space-150, 12px);
+  align-self: stretch;
+  color: var(--content-secondary, #777676);
+  text-align: center;
+  font-family: Lettera Text LL;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.previously-reviewed {
+  display: flex;
+  padding: var(--spacing-space-200, 2px) 6px var(--spacing-space-200, 4px) 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.previously-reviewed-choice {
+  color: var(--content-primary, #050505);
+  text-align: center;
+  font-family: Lettera Text LL;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.previously-reviewed-date {
+  color: var(--content-secondary, #777676);
+  text-align: center;
+  font-family: Lettera Text LL;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.default-row {
+  display: flex;
+  height: auto;
+  padding: var(--spacing-space-200, 16px) 18px var(--spacing-space-200, 16px)
+    24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 6px;
+  align-self: stretch;
+  color: var(--content-primary, #050505);
+  text-align: center;
+  font-family: Lettera Text LL;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  white-space: nowrap;
+}
